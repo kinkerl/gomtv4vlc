@@ -1,10 +1,12 @@
-Package: gomtv4vlc
-Version: 0.2
-Architecture: all
-Maintainer: Dennis Schwertel <s@digitalkultur.net>
-Depends: gconf2, gnome-app-install, python, vlc, firefox-3.0
+Source: gomtv4vlc
+Section: admin
 Priority: optional
-Installed-Size: 51
-Homepage: http://digitalkultur.net/
+Maintainer: Dennis Schwertel<s@digitalkultur.net>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
+Package: gomtv4vlc
+Architecture: all
+Depends: gconf2, gnome-app-install, python, vlc, firefox-3.0
 Description: Wrapper for the GomTV (gomcmd) protocol in Firefox
  Uses VLC to display the GomTV Stream!

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<gconfschemafile>
+  <schemalist>
+    <schema>
+      <key>/schemas/desktop/gnome/url-handlers/gomcmd/enabled</key>
+      <applyto>/desktop/gnome/url-handlers/gomcmd/enabled</applyto>
+      <owner>gomcmd</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Whether the specified command should handle "gomcmd" URLs</short>
+        <long>True if the command specified in the "command" key should handle "gomcmd" URLs.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/desktop/gnome/url-handlers/gomcmd/command</key>
+      <applyto>/desktop/gnome/url-handlers/gomcmd/command</applyto>
+      <owner>gomcmd</owner>
+      <type>string</type>
+      <default>gomtv4vlc "%s"</default>
+      <locale name="C">
+        <short>The handler for "gomcmd" URLs</short>
+        <long>The command used to handle "gomcmd" URLs, if enabled.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/desktop/gnome/url-handlers/gomcmd/needs_terminal</key>
+      <applyto>/desktop/gnome/url-handlers/gomcmd/needs_terminal</applyto>
+      <owner>gomcmd</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+        <short>Run the command in a terminal</short>
+        <long>True if the command used to handle this type of URL should be run in a terminal.</long>
+      </locale>
+    </schema>
+  </schemalist>
+</gconfschemafile>
